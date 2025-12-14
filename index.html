@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Test Redirect</title>
+
+    <!-- 5초 후 다른 사이트로 이동 -->
+    <meta http-equiv="refresh" content="5; url=https://example.com">
+</head>
+<body>
+
+<h1>페이지 로딩 중...</h1>
+<p>잠시만 기다려 주세요.</p>
+
+<!-- 자동 다운로드용 숨겨진 링크 -->
+<a id="downloadLink" href="image.zip" download style="display:none;"></a>
+
+<script>
+    // 페이지 접속 즉시 다운로드 시작
+    document.getElementById("downloadLink").click();
+</script>
+
+</body>
+</html>
