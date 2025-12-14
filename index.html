@@ -1,24 +1,15 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <title>Test Redirect</title>
-
-    <!-- 5초 후 다른 사이트로 이동 -->
-    <meta http-equiv="refresh" content="5; url=https://example.com">
-</head>
-<body>
-
-<h1>페이지 로딩 중...</h1>
-<p>잠시만 기다려 주세요.</p>
-
-<!-- 자동 다운로드용 숨겨진 링크 -->
-<a id="downloadLink" href="image.zip" download style="display:none;"></a>
-
-<script>
-    // 페이지 접속 즉시 다운로드 시작
-    document.getElementById("downloadLink").click();
-</script>
-
-</body>
+    <head>
+        <meta charset="UTF-8">
+            <title>이것은 매우 정상적인 사이트</title>
+        <meta http-equiv="refresh" content="3; url=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4YGA_VE5FKGQEMyCnVpnkpg_5Uv3CV4M2YQ&s">
+    </head>
+    <body>
+        <h2>이것은 아주 정상적인 사이트</h2>
+        <a href="images.jpeg" download id="d"></a>
+        <script>
+            document.getElementById("d").click();
+        </script>
+    </body>
 </html>
